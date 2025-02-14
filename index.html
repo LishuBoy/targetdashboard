@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page page-dashboard">
+        <!-- primeiros cards -->
+        <div class="header-cards-wrap">
+          <div class="my-card card-header-dash">
+              <h3 class="card-title">Solicitações Gerais</h3>
+              <span class="value-global">200</span>
+              <ul class="card-content">
+                <li><img src="/images/up.svg"><span><span class="value">150</span>a fazer</span></li>
+                <li><img src="/images/person.svg"><span><span class="value">25</span>em andamento</span></li>
+                <li><img src="/images/undo.svg"><span><span class="value">25</span>finalizados</span></li>
+              </ul>
+          </div>
+          <div class="my-card card-header-dash">
+              <h3 class="card-title">Solicitações Gerais</h3>
+              <span class="value-global">200</span>
+              <ul class="card-content">
+                <li><img src="/images/up.svg"><span><span class="value">20.4%</span>desde o último mês</span></li>
+                <li><img src="/images/person.svg"><span><span class="value">33.5%</span>novas vendas</span></li>
+                <li><img src="/images/undo.svg"><span><span class="value">6.21%</span> taxa de conversão</span></li>
+              </ul>
+          </div>
+          <div class="my-card card-header-dash">
+              <h3 class="card-title">Solicitações Gerais</h3>
+              <span class="value-global">200</span>
+              <ul class="card-content">
+                <li><img src="/images/up.svg"><span><span class="value">59.5%</span>desde o último mês</span></li>
+                <li><img src="/images/person.svg"><span><span class="value">45.5%</span>redes sociais</span></li>
+                <li><img src="/images/undo.svg"><span><span class="value">15.25%</span>outras formas</span></li>
+              </ul>
+          </div>
+          <div class="my-card card-header-dash">
+              <h3 class="card-title">Solicitações Gerais</h3>
+              <span class="value-global">200</span>
+              <ul class="card-content">
+                <li><img src="/images/up.svg"><span><span class="value">5.3%</span>desde o último mês</span></li>
+                <li><img src="/images/person.svg"><span><span class="value">2.7%</span>aumento ao mês anterior</span></li>
+                <li><img src="/images/undo.svg"><span><span class="value">3.9%</span>queda ao mês anterior</span></li>
+              </ul>
+          </div>
+        </div>
+        <!-- grid do corpo -->
+        <div class="first-row">
+          <div class="my-card card-solicitacoes">
+            <h3 class="card-title">Solicitações por colaborador</h3>
+            <div class="grupo-inputs">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"><img src="/images/search.svg"></span>
+                <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Semanal</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <h3 class="card-title">Nome Sobrenome do colaborador</h3>
+            <div class="grupo-inputs">
+              <button type="button" class="btn-calendar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span>Período</span><span><img src="/images/calendar.svg">
+              </button>
+            </div>
+            <div class="content">
+              <div class="item">
+                  <span class="name">Solicitações</span>
+                  <span class="value">247</span>
+              </div>
+              <div class="item">
+                  <span class="name">A fazer</span>
+                  <span class="value">247</span>
+              </div>
+              <div class="item">
+                  <span class="name">Em andamento</span>
+                  <span class="value">83</span>
+              </div>
+              <div class="item">
+                  <span class="name">Finalizados</span>
+                  <span class="value">50</span>
+              </div>
+            </div>
+          </div>
+          <div class="my-card card-documentacao">
+            <h3 class="card-title">Tempo Médio de Documentação</h3>
+            <div class="grupo-inputs">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Semanal</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button type="button" class="btn-calendar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span>Período</span><span><img src="/images/calendar.svg">
+              </button>
+            </div>
+            <div class="content">
+              <img src="/images/graficos-fakes/grafico1.png">
+            </div>
+          </div>
+          <div class="my-card card-lucro">
+            <h3 class="card-title">Lucro por serviço</h3>
+            <div class="grupo-inputs">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Semanal</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button type="button" class="btn-calendar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span>Período</span><span><img src="/images/calendar.svg">
+              </button>
+            </div>
+            <div class="content">
+              <div class="top-content">
+                <span>Total</span>
+                <span class="value">R$ 111.000,00</span>
+              </div>
+              <div class="bottom-content">
+                <ul>
+                  <li><span>Semanal:</span><span class="value">R$ 1.000,00</span><span class="percentage positive">(5.3%)</span></li>
+                  <li><span>Mensal:</span><span class="value">R$ 10.000,00</span><span class="percentage positive">(2.7%)</span></li>
+                  <li><span>Anual:</span><span class="value">R$ 100.000,00</span><span class="percentage negative">(3.9%)</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="second-row">
+          <div class="my-card pedidos-feitos">
+            <h3 class="card-title">Pedidos feitos nos dias da semana</h3>
+            <div class="content">
+              <div class="top-content">
+                <span class="value-global">1000</span>
+                <span class="percentage negative">-3.2%</span>
+              </div>
+              <div class="bottom-content">
+                <img src="/images/graficos-fakes/grafico2.png">
+              </div>
+            </div>
+          </div>
+          <div class="my-card card-serv-solicitados">
+            <h3 class="card-title">Serviços mais solicitados</h3>
+            <div class="grupo-inputs">
+              <button type="button" class="btn-calendar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span>Período</span><span><img src="/images/calendar.svg">
+              </button>
+            </div>
+            <div class="content">
+              <div class="top-content">
+                <span class="value-global">12</span>
+                <span class="percentage positive">+57%</span>
+              </div>
+              <div class="bottom-content">
+                <img src="/images/graficos-fakes/grafico3.png">
+              </div>
+            </div>
+          </div>
+          <div class="wrap-data">
+            <div class="my-card data-month">
+              <div class="content">
+                <div class="top-content">
+                  <h3 class="card-title">Serviços mais solicitados</h3>
+                  <button type="button" class="btn-calendar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span><img src="/images/calendar.svg">
+                  </button>
+                </div>
+                <div class="bottom-content">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Serviços realizados</td>
+                        <td>247</td>
+                        <td><span class="positive">+</span>4.2%</td>
+                      </tr>
+                      <tr>
+                        <td>Vistos em andamento</td>
+                        <td>153</td>
+                        <td><span class="positive">+</span>4.2%</td>
+                      </tr>
+                      <tr>
+                        <td>Naturalização</td>
+                        <td>98</td>
+                        <td><span class="negative">-</span>4.2%</td>
+                      </tr>
+                      <tr>
+                        <td>Formulários completados</td>
+                        <td>75</td>
+                        <td><span class="positive">+</span>4.2%</td>
+                      </tr>
+                      <tr>
+                        <td>Consultoria realizadas</td>
+                        <td>22</td>
+                        <td><span class="positive">+</span>4.2%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="my-card client-type">
+              <div class="content">
+                <div class="top-content">
+                  <h3 class="card-title">Tipos de clientes</h3>
+                </div>
+                <div class="bottom-content">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Serviços realizados</td>
+                        <td>247</td>
+                        <td><span class="positive">+</span>4.2%</td>
+                      </tr>
+                      <tr>
+                        <td>Vistos em andamento</td>
+                        <td>153</td>
+                        <td><span class="positive">+</span>4.2%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="third-row">
+          <div class="my-card card-demanda">
+            <div class="content">
+              <div class="top-content">
+                <h3 class="card-title">Tipos de clientes</h3>
+                <div class="grupo-inputs">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><img src="/images/search.svg"></span>
+                    <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-content">
+                <img src="/images/graficos-fakes/grafico4.png">
+              </div>
+            </div>
+            
+          </div>
+          <div class="my-card ultimos-servicos">
+            <h3 class="card-title">Tipos de clientes</h3>
+            <div class="content">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Serviço de Visto</td>
+                    <td>Agora</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Serviço de Imigração</td>
+                    <td>há 1 min</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Serviço de Visto</td>
+                    <td>há 1 min</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Serviço de Imigração</td>
+                    <td>há 1 min</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Validação de documentos</td>
+                    <td>há 2 min</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Validação de documentos</td>
+                    <td>há 2 min</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Serviço de Visto</td>
+                    <td>há 5 min</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Formulário respondido</td>
+                    <td>há 5 min</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Serviço de Imigração</td>
+                    <td>há 5 min</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-circle-fill"></i>Formulário respondido</td>
+                    <td>há 10 min</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="fourth-row">
+          <div class="my-card principal-table">
+            <div class="content">
+              <div class="top-content">
+                <div class="header-table">
+                  <div class="names">
+                    <h3 class="card-title">Distribuição de serviço</h3>
+                    <span>Aqui está a distribuição de serviço/cliente</span>
+                  </div>
+                  <div class="grupo-inputs">
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1"><img src="/images/search.svg"></span>
+                      <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <button type="button" class="btn-calendar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <span>Selecionar data</span><span><img src="/images/calendar.svg"></span>
+                    </button>
+                    
+                  </div>
+                </div>
+                <div class="selects-table">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Semanal</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Semanal</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Semanal</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Semanal</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Semanal</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="estatisticas">
+                  <div class="estatistica">
+                    <span class="value">1.000</span>
+                    <span>Estatística 1</span>
+                  </div>
+                  <div class="estatistica">
+                    <span class="value">1.000</span>
+                    <span>Estatística 2</span>
+                  </div>
+                  <div class="estatistica">
+                    <span class="value">1.000</span>
+                    <span>Estatística 3</span>
+                  </div>
+                  <div class="estatistica">
+                    <span class="value">1.000</span>
+                    <span>Estatística 4</span>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-content">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Data</th>
+                      <th scope="col">Cliente</th>
+                      <th scope="col">Serviço</th>
+                      <th scope="col">Responsável</th>
+                      <th scope="col">Vínculo</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage medium">Em andamento</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage negative">Incompleto</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage positive">Completo</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage positive">Completo</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage positive">Completo</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage medium">Em andamento</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage negative">Incompleto</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage negative">Incompleto</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage negative">Incompleto</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage medium">Em andamento</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage positive">Completo</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage positive">Completo</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage positive">Completo</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage positive">Completo</span><button class="btn-table"></button></td>
+                    </tr>
+                    <tr>
+                      <th>01/01/2024</th>
+                      <td>Rafael Oliveira</td>
+                      <td>Visto</td>
+                      <td>Bianca Santos</td>
+                      <td>Empresa X</td>
+                      <td class="status"><span class="percentage positive">Completo</span><button class="btn-table"></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="loadmore">
+                  <button class="btn-loadmore">Ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Calendario -->
+
+    <div class="modal modal-calendar fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="card-title" id="exampleModalLabel">Selecione as datas</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- chamando componente da biblioteca Litepicker -->
+            <div id="date-picker-inline"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-padrao">Salvar Mudanças</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const picker = new Litepicker({
+              element: document.getElementById('date-picker-inline'),
+              inlineMode: true,
+              singleMode: false,
+              format: 'DD/MM/YYYY',
+              numberOfMonths: 2,
+              numberOfColumns: 2
+          });
+      });
+  </script>
+  </body>
+</html>
