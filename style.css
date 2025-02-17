@@ -1398,3 +1398,481 @@ body{
     opacity: 0;
     display: none;
 }
+
+.popup-tgt{
+    .modal-header, .modal-footer, .modal-body{
+        border: none;
+        padding: 20px 30px;
+        
+        .modal-title{
+            font-size: 19px;
+            color: var(--color-1);
+            font-weight: 700;
+        }
+    }
+    
+    .grupo-inputs{
+        flex-direction: column;
+        gap: 20px;
+        .grupo{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            
+            label{
+                font-size: 15px;
+                font-weight: 500;
+                color: var(--color-1);
+            }
+            
+            textarea{
+                border-radius: 12px;
+                border: 1px solid var(--main-bg-color);
+                color: var(--main-text-color);
+                min-height: 45px;
+            }
+            input{
+                border-radius: 12px;
+                border: 1px solid var(--main-bg-color);
+                color: var(--main-text-color);
+                min-height: 45px;
+                padding: 0px 20px;
+            }
+            
+            &.arquivo-up{
+                padding: 20px;
+                border-radius: 10px;
+                background-color: var(--main-bg-color);
+            }
+        }
+    }
+    
+    .modal-body{
+        padding: 0px 30px;
+    }
+    
+    .modal-footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+        .btn-padrao{
+            width: max-content;
+        }
+    }
+    
+    .modal-content{
+        border-radius: 20px;
+    }
+}
+
+.status-client{
+    
+    
+    &.dependente{
+        .dependente-sub{
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: block;
+            color: var(--color-1);
+        }
+    }
+}
+
+.table-dependencies{
+    .modal-footer{
+        justify-content: end;
+    }
+    
+    .grupo-inputs{
+        .input-group{
+            min-width: 200px;
+        }
+    }
+}
+
+.document{
+    .subtitle{
+        font-size: 12px;
+        display: block;
+    }
+    
+    .grupo-inputs{
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .modal-footer{
+        justify-content: end;
+    }
+}
+
+.document-status{
+    .modal-footer{
+        justify-content: end;
+    }
+}
+.formulario{
+    .modal-footer{
+        justify-content: end;
+    }
+}
+
+@media(max-width: 993px){
+    .page{
+        overflow-x: hidden;
+        padding: 10px;
+    }
+    
+    .card-title{
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--main-title-color);
+    }
+    .value-global, {
+        font-size: 25px;
+    }
+    
+    .my-card{
+        &.crm{
+            padding: 20px;
+            gap: 20px;
+            
+            .card-title{
+                font-size: 16px;
+            }
+        }
+    }
+    
+    .page-dashboard{
+        
+        .first-row, .second-row, .third-row, .fourth-row{
+            margin-top: 10px;
+            gap: 10px;
+        }
+        
+        .header-cards-wrap{
+            grid-template-columns: repeat(2, 2fr);
+            gap: 10px;
+            
+            .card-header-dash{
+                .value-global{
+                    font-size: 20px;
+                }
+            }
+        }
+        
+        .first-row{
+            flex-wrap: wrap;
+            .card-solicitacoes{
+                width: 100%;
+                
+                .content{
+                    .item{
+                        .name{
+                            font-size: 14px !important;
+                        }
+                        
+                        .value{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .card-documentacao{
+                width: 100%;
+            }
+            .card-lucro{
+                width: 100%;
+                
+                .content{
+                    .top-content{
+                        margin-bottom: 20px;
+                        span{
+                            font-size: 16px;
+                        }
+                        
+                        .value{
+                            font-size: 25px;
+                        }
+                    }
+                    
+                    .bottom-content{
+                        li{
+                            gap: 10px;
+                            span{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .second-row{
+            flex-wrap: wrap;
+            
+            .wrap-data{
+                gap: 10px;
+            }
+            .pedidos-feitos{
+                width: 100%;
+                
+                .content{
+                    .top-content{
+                        .percentage{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .card-serv-solicitados{
+                width: 100%;
+                .content{
+                    .top-content{
+                        .percentage{
+                            font-size: 25px;
+                        }
+                    }
+                }
+                
+            }
+            .wrap-data{
+                width: 100%;
+            }
+        }
+        
+        .third-row{
+            flex-wrap: wrap;
+            .card-demanda{
+                width: 100%;
+            }
+            .ultimos-servicos{
+                width: 100%;
+            }
+        }
+    }
+    
+    .principal-table{
+        overflow: hidden;
+        .bottom-content{
+            overflow-x: auto !important;
+            background-color: #fff;
+            
+            .table{
+                min-width: 1200px;
+                
+                .status{
+                    
+                }
+            }
+        }
+        
+        .top-content{
+            .estatisticas{
+                gap: 0px;
+                justify-content: space-between;
+                .estatistica{
+                    .value{
+                        font-size: 25px;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                }
+    
+            }
+                        
+            .selects-table{
+                display: flex;
+                flex-wrap: wrap;
+                .form-select{
+                    width: calc(50% - 10px);
+                    
+                    &:last-of-type{
+                        width: 100%;
+                    }
+                }
+            }
+            
+            .header-table{
+                display: flex;
+                flex-wrap: wrap;
+                
+                .grupo-inputs{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    
+    .page-crm{
+        .header-cards-wrap{
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 10px;
+            
+            .card-header-dash{
+                width: 100%;
+                
+                .card-title{
+                    font-size: 16px;
+                    min-height: 38px;
+                }
+                
+                .values{
+                    .value-1{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        
+        .first-row-crm{
+            margin-top: 10px;
+            
+            .my-card{
+                &:nth-of-type(1){
+                    .my-card-content{
+                        .infos-graph{
+                            gap: 10px;
+                            justify-content: space-between;
+                            
+                            .info{
+                                .value{
+                                    font-size: 25px;
+                                }
+                                .status-crm{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .col-lg-5{
+                margin-top: 10px;
+            }
+        }
+        
+        .second-row-crm{
+            margin-top: 10px;
+            
+            .cards-left{
+                .my-card{
+                    &:nth-of-type(1){
+                        .my-card-content{
+                            .infos-graph{
+                                .info{
+                                    .status-crm{
+                                        span{
+                                            font-size: 14px;
+                                        }
+                                    }
+                                                                    .value{
+                                        font-size: 25px;
+                                    }
+                                    
+                                    p{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    &:nth-of-type(2){
+                        margin-top: 10px;
+                        .content{
+                            .value{
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .clientes-recentes{
+                margin-top: 10px;
+            }
+            
+            .principais-paises{
+                margin-top: 20px;
+            }
+        }
+    }
+    
+    .page-perfil{
+        .card-perfil{
+            .bottom-content{
+                flex-direction: column;
+                .left-content{
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: center;
+                    .user-pic{
+                        min-height: 100px;
+                        max-height: 100px;
+                        min-width: 100px;
+                        margin-top: -50px;
+                        max-width: 100px;
+                    }
+                    .user-info{
+                        text-align: center;
+                        margin-bottom: 20px;
+                        .name{
+                            text-align: center;
+                        }
+                        .status-wrap{
+                            text-align: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .first-row-perfil{
+            margin-top: 10px;
+            .col-lg-3{
+                margin-bottom: 10px;
+            }
+        }
+        .second-row-perfil{
+            .nav-tabs{
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                
+                .nav-item{
+                    button{
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        
+        .perfil-contatos{
+            .header-form{
+                gap: 20px;
+                flex-direction: column;
+                align-items: start;
+                
+                .btn-padrao{
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            
+            .cards-wrap{
+                gap: 20px;
+            }
+        }
+
+        .grupo-inputs{
+            flex-direction: column;
+        }
+    }
+}
+
